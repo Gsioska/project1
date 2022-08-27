@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*    header  */
+
+header{
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: #263b55;
+    z-index: 10;
+}
+.navbar-brand{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration-line: none;
+
+}
+ul{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 40px;
+    justify-content:space-between;
+    gap: 30px;
+   
+}
+ul a{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration-line: none;
+}
+.dropdown{
+    visibility: hidden;
+    top: 10px;
+    right: 20px;  
+}
+
+
+
+/*    responsive  */
+
+@media screen and (max-width: 600px) {
+    ul a{
+        visibility: hidden;
+    }
+.navbar-brand{
+    justify-content: flex-start;
+}
+.sat{
+    visibility: hidden;
+}
+   
+    /* Dropdown Button */
+.dropdown{
+    visibility: visible;
+    top: 10px;
+    right: 20px; 
+}
+
+.dropbtn {
+    background-color: #126a3a;
+    color: white;
+    min-width: 160px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7dcba0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.footerdropdawn{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.footermenu{
+    visibility: hidden;
+}
+}
+ /*    body  */
+
+body{
+    background-color: #bdd2ec;
+}
+.media{
+    width: 60px;
+    height: 140px;
+    position: fixed;
+    margin-top: 100px;
+    margin-left: 95%;
+}
+.fb{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    background-image: url(../project1/img/icons/facebook.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.fb:hover{
+    cursor: pointer;
+    background-image: url(../project1/img/icons/facebook\ active.png);
+}
+.insta{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    background-image: url(../project1/img/icons/instagram.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.insta:hover{
+    cursor: pointer;
+    background-image: url(../project1/img/icons/instagram\ active.png);
+}
+.sat, .satauri {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+}
+.sat h2{
+    font-family:sans-serif;
+    color: #0d0c0c;
+    font-weight: 700;
+}
+.text p{
+    color: #000000;
+    font-size: 16px;
+    margin: 20px;
+
+}
+/* slideri js */
+
+.owl-carousel{
+    width: 80%;
+    margin: 0 auto;  
+}
+.item{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.owl-dots{
+    visibility: hidden;
+}
+.owl-theme .owl-nav{
+    padding: 30px;
+    margin-top: 0;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    font-size: 50px!important; 
+    color: #ffffff!important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
+}
+/* cards */
+.cards{
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.card{
+    margin: 10px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-body{
+    background-color: rgb(81, 52, 18);
+}
+.card-group a, p{
+    text-decoration: none;
+    color: #ffffff;
+}
+.sat4 {
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.sat4 h4{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #100f0f; 
+}
+.sat4 a{
+    text-decoration-line: none;
+}
+
+/*contactform*/
+.contactform{
+    
+    width: 500px;
+    margin: 0 auto;
+
+}
+.btn {
+    width: 100%;
+
+}
+
+
+/*chat*/
+
+.chatx{
+    width: 50px;
+    height: 50px;
+    background-image: url(../project1/img/icons/chat.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.chatx:hover{
+    cursor: pointer;
+    background-image: url(../project1/img/icons/chaticon\ active.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.chat-popup {
+    display: none;    
+    position: fixed;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #545050;
+    resize: none;
+    min-height: 200px;
+  }
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+.form-container .btn {
+    background-color: #000000;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+.form-container .cancel {
+    background-color: rgb(246, 209, 101);
+  }
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+form{
+      padding: 100px;
+      margin-top: 0;
+  }
+.open-button {
+    display: flex;
+    justify-content: flex-end;
+    background-color:transparent;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 4px;
+    width: 250px;
+    z-index:5;
+  }
+.chat-popup {
+    display: none;    
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 2;
+  }
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color:rgb(138, 138, 150);
+  }
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f5f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+.form-container .btn {
+    background-color: #000000;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+.form-container .cancel {
+    background-color: rgb(131, 214, 167);
+  }
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+/*    footer  */
+footer{
+    position: relative;
+    background-color: #263b55;
+    width: 100%;
+    height: 500px;
+}
+.footercontainer{
+    padding: 20px;
+    width: 100%;
+    height: 100%; 
+}
+.footermenu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; 
+}
+.footermenu a{
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+  
+ 
